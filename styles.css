@@ -1,0 +1,116 @@
+* {
+    border:0;
+    margin:0;
+    padding:0;
+    
+}
+
+
+
+nav {
+    display:flex;
+    flex-direction: row;
+    padding:30px;
+    background:linear-gradient(40deg,#ff00cc,#333399);
+}
+
+.title {
+    
+    color:white;
+}
+
+ul {
+    align-items: center;
+    
+    display:flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-around;
+    list-style: none;
+
+
+}
+
+ul a {
+    text-decoration: none;
+    color:white;
+}
+
+.button-link {
+    text-decoration: none;
+    color:white;
+}
+
+
+
+main {
+    display:flex;
+    flex-direction:row ;
+    
+    padding-top: 50px;
+    padding-bottom: 100px;
+    
+    
+}
+
+
+.Service {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-left:10px;
+
+   
+}
+
+.button {
+    background:linear-gradient(40deg,#ff00cc,#333399);
+    padding:12px 15px;
+    border-radius:25px;
+    position: relative;
+
+    top:20px;
+
+
+}
+.sign-up {
+    display:flex;
+    width:50%;
+    
+    justify-content:center;
+    text-align: center;
+    
+    
+    
+}
+
+form {
+    
+   
+   width:100%;
+}
+
+input[type=text] {
+    padding: 12px 20px;
+    border-radius: 25px;   
+    border:1px solid #ccc;
+    
+}
+
+input[type=password] {
+    padding: 12px 20px;
+    border-radius: 25px;   
+    border:1px solid #ccc;
+    
+}
+
+input[type=submit] {
+    padding: 12px 85px;
+    border-radius:25px;
+    border: 1px solid rgb(150, 150, 150);
+    background:linear-gradient(40deg,#ff00cc,#333399);
+
+}
