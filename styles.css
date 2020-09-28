@@ -1,17 +1,32 @@
 * {
-    border:0;
+    box-sizing: border-box;
     margin:0;
     padding:0;
     
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
 
+.h1-label {
+    font-size: 24px;
+}
 
+.Service p {
+    font-size: 20px;;
+}
 nav {
     display:flex;
     flex-direction: row;
     padding:30px;
-    background:linear-gradient(40deg,#ff00cc,#333399);
+    border:none;
+   /* background:linear-gradient(40deg,#ff00cc,#333399); */
+   background:rgb(93, 93, 250);
+}
+
+ul li a:hover {
+    border-bottom: solid;
 }
 
 .title {
@@ -61,27 +76,38 @@ main {
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    margin-left:10px;
-
+    padding-left:10px;
+    padding-bottom: 75px;
+    width:auto;
+    
    
 }
 
 .button {
-    background:linear-gradient(40deg,#ff00cc,#333399);
+    /*background:linear-gradient(40deg,#ff00cc,#333399);*/
+    background:rgb(93, 93, 250);
     padding:12px 15px;
     border-radius:25px;
     position: relative;
+    
 
     top:20px;
-
-
+    
 }
+
+.button:hover {
+   /* background:linear-gradient(40deg,#ce06a6,#282879 )*/
+   background:rgb(81, 81, 223);
+}
+
 .sign-up {
     display:flex;
-    width:50%;
+    width:100%;
     
     justify-content:center;
     text-align: center;
+    padding-left: 25px;
+    
     
     
     
@@ -94,23 +120,104 @@ form {
 }
 
 input[type=text] {
-    padding: 12px 20px;
-    border-radius: 25px;   
+    padding: 18px 30px;
+    border-radius: 50px;  
     border:1px solid #ccc;
+    font-size: 18px;
     
 }
 
 input[type=password] {
-    padding: 12px 20px;
-    border-radius: 25px;   
+    padding: 18px 30px;
+    border-radius: 50px;   
     border:1px solid #ccc;
-    
+    font-size:18px;    
 }
 
 input[type=submit] {
-    padding: 12px 85px;
-    border-radius:25px;
-    border: 1px solid rgb(150, 150, 150);
-    background:linear-gradient(40deg,#ff00cc,#333399);
+    font-size: 18px;
+    padding: 18px 110px;
+    border-radius:30px;
+    border:none;
+    /*background:linear-gradient(40deg,#ff00cc,#333399);*/
+    background:rgb(93, 93, 250);
+    
+    color:white;
+    
 
 }
+
+input[type=submit]:hover {
+    
+    background:rgb(81, 81, 223);
+
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+    nav {
+        
+        flex-direction: column;
+      
+    }
+    
+}
+
+@media screen and (max-width: 640px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+  
+    .title {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+    
+ 
+}
+@media screen and (max-width: 340px) {
+    main {
+        flex-direction: column;
+        justify-content: center;
+    }
+  
+  
+    .title {
+        text-align: center;
+        padding-bottom: 15px;
+    }
+
+    input[type=text] {
+        padding: 18px 30px;
+        border-radius: 50px;  
+        border:1px solid #ccc;
+        font-size: 12px;
+        
+    }
+    
+    input[type=password] {
+        padding: 18px 30px;
+        border-radius: 50px;   
+        border:1px solid #ccc;
+        font-size:12px;    
+    }
+    
+    input[type=submit] {
+        font-size: 12px;
+        padding: 18px 87px;
+        border-radius:30px;
+        border:none;
+      
+        color:white;
+        
+    
+    }
+    
+ 
+}
+
